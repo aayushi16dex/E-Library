@@ -1,0 +1,79 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<display-name>RegistrationServlet</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertRecord</servlet-name>
+  	<display-name>InsertRecord</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.InsertRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateRecord</servlet-name>
+  	<display-name>UpdateRecord</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.UpdateRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewRecord</servlet-name>
+  	<display-name>ViewRecord</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.ViewRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteRecord</servlet-name>
+  	<display-name>DeleteRecord</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.DeleteRecord</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayRecord</servlet-name>
+  	<display-name>DisplayRecord</display-name>
+  	<description></description>
+  	<servlet-class>ServletDemo.DisplayRecord</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertRecord</servlet-name>
+  	<url-pattern>/InsertRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateRecord</servlet-name>
+  	<url-pattern>/UpdateRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewRecord</servlet-name>
+  	<url-pattern>/ViewRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteRecord</servlet-name>
+  	<url-pattern>/DeleteRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayRecord</servlet-name>
+  	<url-pattern>/DisplayRecord</url-pattern>
+  </servlet-mapping>
+</web-app>

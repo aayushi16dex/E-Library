@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+img{
+   float: left;
+   margin-right: 300px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+h1{
+font-size: 50px;
+font-family: Georgia;
+float: center;
+
+}
+/* Set a style for the submit button */
+.submitbtn {
+  background-color: #E59866;
+  color: white;
+  font-size: 30px;
+  padding: 12px 16px;
+  margin: 2px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+ 
+</style>
+<title>Insert</title>
+</head>
+ 
+<body>
+<form action = "InsertRecord" method = "post" >
+  <div class="container">
+  
+  <h1>NCU Library</h1> 
+  
+<p style= "color: white; text-align: center; font-size: 200%; background-color:#E59866; padding: 10px 14px;"><b>Inserting Records</b></p>
+ 
+<p style = "color: red; background-color:#F0FFF0; font-size: 100%; padding: 8px 12px;"><marquee> <b>Note: All * are mandatory fields</b></marquee></p>
+     
+    <label for="bid"><b>Book id <span style="color: #ff0000">*</span></b></label> 
+    <input type="text" placeholder="Integers only" name = "bid" required>
+
+    <label for="btitle"><b>Book Title<span style="color: #ff0000">*</span></b></label> 
+    <input type="text" placeholder="Enter book title" name = "btitle" required>
+    
+    <label for="bauth"><b>Book Author <span style="color: #ff0000">*</span></b></label> 
+    <input type="text" placeholder="Enter book author" name = "bauth" required>
+    
+    <label for="bprice"><b>Book Price <span style="color: #ff0000">*</span></b></label> 
+    <input type="text" placeholder="Enter book price" name = "bprice" required>
+    
+    <label for="bqty"><b>Book Quantity<span style="color: #ff0000">*</span></b></label> 
+    <input type="text" placeholder="Enter book quantity" name = "bqty" required>
+    
+    <hr>
+     
+    <button type="submit" class="submitbtn">Insert</button>
+  </div>
+</form>
+
+</body>
+</html>
